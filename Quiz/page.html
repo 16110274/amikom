@@ -1,0 +1,1036 @@
+<html>
+<head>
+	<title>Titel</title>
+	<link rel="stylesheet" href="extra.css">
+	<link rel="stylesheet" href="side.css">
+</head>
+<body>
+<div class="container mx-auto mt-8">
+  <div class="project-edit">
+    <div class="flex justify-between">
+      <div class="mb-4 text-lg w-full border-b border-c3 text-c2 pl-2 pb-2 flex">
+        <div class="flex-1">Project: sample</div>
+        <!---->
+      </div>
+    </div>	
+	
+	<nav class="sidebar" role="navigation">
+	
+      <div class="md:w-1/3 pr-2">
+        <div class="card border-c3">
+          <div class="content mt-4 mb-8">
+            <div class="uppercase tracking-wide text-sm text-c2 mb-4">Project</div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-cogs"></i>
+              <div class="pl-2">Settings</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-cubes"></i>
+              <div class="pl-2">Builds</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0 active"><i class="fa fa-fw fa-file-code-o"></i>
+              <div class="pl-2">Models</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest"><i class="fa fa-fw fa-puzzle-piece"></i>
+              <div class="pl-2">Add-ons</div>
+            </div>
+            <div class="uppercase tracking-wide text-sm text-c2 mb-4 mt-8">Models</div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-file-code-o"></i>
+              <div class="pl-2">Car</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-file-code-o"></i>
+              <div class="pl-2">House</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest"><i class="fa fa-fw fa-file-code-o"></i>
+              <div class="pl-2">User</div>
+            </div>
+            <div class="uppercase tracking-wide text-sm text-c2 mb-4 mt-8">Migrations</div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0">
+              <i class="fa fa-fw fa-database"></i>
+              <div class="pl-2">Cars</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0">
+              <i class="fa fa-fw fa-database"></i>
+              <div class="pl-2">Houses</div>
+            </div>
+            <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest">
+              <i class="fa fa-fw fa-database"></i>
+              <div class="pl-2">Users</div>
+            </div>
+            <div>
+              <div class="uppercase tracking-wide text-sm text-c2 mb-4 mt-8">Add-ons</div>
+              <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-cogs"></i>
+                <div class="pl-2">Front End Presets</div>
+              </div>
+              <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-user-circle-o"></i>
+                <div class="pl-2">Authentication</div>
+              </div>
+              <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-bug"></i>
+                <div class="pl-2">Debug Bar</div>
+              </div>
+              <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest border-b-0"><i class="fa fa-fw fa-sun-o"></i>
+                <div class="pl-2">Horizon</div>
+              </div>
+              <div class="flex cursor-pointer border px-4 py-2 text-grey-darkest"><i class="fa fa-fw fa-id-card-o"></i>
+                <div class="pl-2">Passport</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+	  </nav>
+	
+    <div class="flex flex-wrap">	  
+      <div class="md:w-2/3 pl-2">
+        <section class="settings hidden">
+          <div class="card border-c3">
+            <div class="title flex"><i class="fa fa-fw fa-cogs"></i>
+              <div class="ml-2">Settings</div>
+            </div>
+            <div class="content flex flex-wrap">
+              <div class="w-1/3">
+                <div class="font-medium text-lg mb-1">Details</div>
+                <p class="text-grey-dark italic">Project Specific Information</p>
+              </div>
+              <div class="w-2/3">
+                <div class="text-normal mb-2">Project Name:</div>
+                <div class="inline-block relative w-3/4"><input type="text" class="input"></div>
+              </div>
+            </div>
+            <div class="footer justify-end">
+              <div class="w-1/4 border-l-2"><a class="cursor-pointer">Save</a></div>
+            </div>
+          </div>
+          <div class="card border-red-dark">
+            <div class="title flex"><i class="fa fa-fw fa-exclamation-triangle"></i>
+              <div class="ml-2">Danger Zone</div>
+            </div>
+            <div class="content flex flex-wrap">
+              <div class="w-2/3">
+                <div class="font-medium text-lg mb-1">Delete Project</div>
+                <p class="text-grey-dark italic">Once you delete the project, there is no going back. Please be certain.</p>
+              </div>
+              <div class="w-1/3 flex justify-end">
+                <form method="POST" action="/projects/2-sample"><input type="hidden" name="_token" value="XlJ0TcrxyrEFBzKIaIbm8BR9elU7Kil07gleOpQT"> <input type="hidden" name="_method" value="DELETE"> <button type="submit" class="px-4 py-2 bg-c1 border border-red-dark text-red-dark rounded">Delete Project</button></form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="builds hidden">
+          <div class="card border-c3">
+            <div class="title flex"><i class="fa fa-fw fa-cubes"></i>
+              <div class="ml-2">Builds</div>
+            </div>
+            <div class="content px-0!">
+              <div class="table w-full">
+                <div class="table-row tracking-wide font-thin">
+                  <div class="table-cell pl-8 pb-2 border-b-4">Type</div>
+                  <div class="table-cell pb-2 border-b-4">Started At</div>
+                  <div class="table-cell pr-8 pb-2 border-b-4">Finished At</div>
+                  <div class="table-cell pr-8 pb-2 border-b-4">Details</div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell pl-8 py-2 border-b-2"><i class="fa fa-fw fa-git"></i></div>
+                  <div class="table-cell py-2 border-b-2">2018-02-21 12:46:27</div>
+                  <div class="table-cell py-2 border-b-2">2018-02-21 12:47:21</div>
+                  <div class="table-cell pr-8 py-2 border-b-2">
+                    <div>sample</div>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell pl-8 py-2 border-b-2"><i class="fa fa-fw fa-git"></i></div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:46:14</div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:46:21</div>
+                  <div class="table-cell pr-8 py-2 border-b-2">
+                    <div>aaa</div>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell pl-8 py-2 border-b-2"><i class="fa fa-fw fa-archive"></i></div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:42:40</div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:42:44</div>
+                  <div class="table-cell pr-8 py-2 border-b-2">
+                    <div><a href="/download/12">Download</a></div>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell pl-8 py-2 border-b-2"><i class="fa fa-fw fa-archive"></i></div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:31:26</div>
+                  <div class="table-cell py-2 border-b-2">2018-02-20 17:31:30</div>
+                  <div class="table-cell pr-8 py-2 border-b-2">
+                    <div><a href="/download/11">Download</a></div>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="table-cell pl-8 py-2"><i class="fa fa-fw fa-archive"></i></div>
+                  <div class="table-cell py-2">2018-02-20 17:30:44</div>
+                  <div class="table-cell py-2"></div>
+                  <div class="table-cell pr-8 py-2">
+                    <div>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="models">
+          <div class="card border-c3">
+            <div class="title flex"><i class="fa fa-fw fa-file-code-o"></i>
+              <div class="ml-2">Models</div>
+            </div>
+            <div class="content flex flex-wrap">
+              <div class="w-1/3">
+                <div class="font-medium text-lg mb-1">New Model</div>
+                <p class="text-grey-dark italic">Create a new model for your application</p>
+              </div>
+              <div class="w-2/3">
+                <div class="text-normal mb-2">Model Name:</div>
+                <div class="inline-block relative w-3/4"><input type="text" class="input">
+                  <!---->
+                </div>
+              </div>
+            </div>
+            <div class="footer justify-end">
+              <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Add Model</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="add-ons hidden">
+          <div class="card border-c3">
+            <div class="title flex">
+              <div class="flex flex-1"><i class="fa fa-fw fa-puzzle-piece"></i>
+                <div class="ml-2">Add-ons</div>
+              </div>
+              <div><input type="text" name="filter" placeholder="Filter Add-ons" class="input text-sm m-0 -m-2"></div>
+            </div>
+            <div class="content">
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-sun-o"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Laravel Horizon
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Horizon provides a beautiful dashboard and code-driven configuration for your Laravel powered Redis queues. Horizon allows you to easily monitor key metrics of your queue system such as job throughput, runtime, and job failures.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/laravel/horizon" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://laravel.com/docs/5.6/horizon" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-xs">Remove Add-on</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-user-circle-o"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Laravel Authentication
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Laravel makes implementing authentication very simple. In fact, almost everything is configured for you out of the box.</p>
+                    <div class="text-xs text-right">
+                      <!----><a href="https://laravel.com/docs/5.6/authentication" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-xs">Remove Add-on</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-id-card-o"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Laravel Passport
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Laravel makes API authentication a breeze using Laravel Passport, which provides a full OAuth2 server implementation for your Laravel application in a matter of minutes.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/laravel/passport" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://laravel.com/docs/5.6/passport" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-xs">Remove Add-on</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-cogs"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Front End Presets
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Change the frontend scaffolding in your application.</p>
+                    <div class="text-xs text-right">
+                      <!----><a href="https://laravel.com/docs/5.6/frontend" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-xs">Remove Add-on</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-bug"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Laravel Debug Bar
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Laravel Debug Bar is a package to integrate PHP Debug Bar with Laravel 5.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/barryvdh/laravel-debugbar" class="no-underline text-c3 hover:underline">Source</a>
+                      <!---->
+                    </div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-xs">Remove Add-on</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-share-alt"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Laravel Multi-Format
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Adds multi-format endpoint support to Laravel 5.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/m1guelpf/laravel-multiformat" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://github.com/m1guelpf/laravel-multiformat" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c4 rounded py-2 px-4 text-c1 text-xs">Add To Project</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-download"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Spatie - Laravel Backup
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">Backup your application and database to any filesystem you like.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/spatie/laravel-backup" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://docs.spatie.be/laravel-backup/v5/introduction" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c4 rounded py-2 px-4 text-c1 text-xs">Add To Project</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-asterisk"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Spatie - Laravel Fractal
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">This package provides a nice and easy wrapper around Fractal for use in your Laravel applications.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/spatie/laravel-fractal" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://murze.be/2015/10/a-fractal-service-provider-for-laravel/" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c4 rounded py-2 px-4 text-c1 text-xs">Add To Project</button></div>
+              </div>
+              <div class="flex flex-wrap border-b py-4 justify-between">
+                <div class="flex-1 mr-4 flex"><i class="fa fa-fw mr-2 fa-picture-o"></i>
+                  <div class="flex-1">
+                    <div class="font-medium text-lg mb-1">
+                      Spatie - Media Library
+                    </div>
+                    <p class="text-grey-dark italic text-sm leading-normal">This package can associate all sorts of files with Eloquent models.</p>
+                    <div class="text-xs text-right"><a href="https://github.com/spatie/laravel-medialibrary" class="no-underline text-c3 hover:underline mr-2">Source</a> <a href="https://docs.spatie.be/laravel-medialibrary/v6/" class="no-underline text-c3 hover:underline">Docs</a></div>
+                  </div>
+                </div>
+                <div class="ml-4"><button class="flex-1 bg-c4 rounded py-2 px-4 text-c1 text-xs">Add To Project</button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="models">
+          <div class="model hidden">
+            <div class="card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-file-code-o"></i>
+                <div class="ml-2">"Car" Details</div>
+              </div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Special Columns</div>
+                  <p class="text-grey-dark italic">Choose unique column functions</p>
+                </div>
+                <div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps with Timezone
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Soft Deletes
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Remember Token
+                    </label></div>
+                </div>
+              </div>
+              <div class="content flex">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Fillable / Guarded</div>
+                  <p class="text-grey-dark italic">Choose your preferred security style</p>
+                </div>
+                <div>
+                  <div class="text-normal mb-2">Project Type:</div>
+                  <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="1">Fillable</option> <option value="0">Guarded</option></select>
+                    <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Delete</a></div>
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Details</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"Car" Columns</div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Columns</div>
+                  <p class="text-grey-dark italic">Determine the columns for your model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Column Name:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><input type="text" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"></div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div class="content px-0!">
+                <div class="table w-full">
+                  <div class="table-row border-b-2">
+                    <div class="table-cell pl-8 pb-2 border-b-4">Name</div>
+                    <div class="table-cell pb-2 border-b-4">Type</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Fillable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Nullable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Unique</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Hidden</div>
+                    <div class="table-cell pr-8 pb-2 border-b-4 text-center"></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">id</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">make</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">model</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2">user_id</div>
+                    <div class="table-cell py-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Columns</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"Car" Relationships</div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Relationships</div>
+                  <p class="text-grey-dark italic">Determine the relationships for this model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Choose Model:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="">Select Model</option> <option value="5">Car</option><option value="6">House</option><option value="3">User</option></select>
+                      <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                    </div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="content px-0!">
+                <div class="table w-full">
+                  <div class="table-row border-b-2">
+                    <div class="table-cell pl-8 pb-2 border-b-4">Model</div>
+                    <div class="table-cell pb-2 border-b-4">Relationship Type</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Local Key</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Related Key</div>
+                    <div class="table-cell pr-8 pb-2 border-b-4 text-center"></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2">User</div>
+                    <div class="table-cell py-2">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="">Select Relation</option> <option value="1">One to One (hasOne)</option><option value="2">One to Many (hasMany)</option><option value="3">Many to Many (belongsToMany)</option><option value="4">Has Many Through (belongsToMany)</option><option value="5">Polymorphic (morphMany)</option><option value="6">Many to Many Polymorphic (morphedByMany)</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="null">Don't Use</option> <option value="id">id</option><option value="make">make</option><option value="model">model</option><option value="user_id">user_id</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="null">Don't Use</option> <option value="id">id</option><option value="make">make</option><option value="model">model</option><option value="user_id">user_id</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell pr-8 py-2 text-center"><i class="fa fa-fw fa-trash text-c5"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Relationships</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="model hidden">
+            <div class="card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-file-code-o"></i>
+                <div class="ml-2">"House" Details</div>
+              </div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Special Columns</div>
+                  <p class="text-grey-dark italic">Choose unique column functions</p>
+                </div>
+                <div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps with Timezone
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Soft Deletes
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Remember Token
+                    </label></div>
+                </div>
+              </div>
+              <div class="content flex">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Fillable / Guarded</div>
+                  <p class="text-grey-dark italic">Choose your preferred security style</p>
+                </div>
+                <div>
+                  <div class="text-normal mb-2">Project Type:</div>
+                  <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="1">Fillable</option> <option value="0">Guarded</option></select>
+                    <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Delete</a></div>
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Details</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"House" Columns</div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Columns</div>
+                  <p class="text-grey-dark italic">Determine the columns for your model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Column Name:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><input type="text" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"></div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div class="content px-0!">
+                <div class="table w-full">
+                  <div class="table-row border-b-2">
+                    <div class="table-cell pl-8 pb-2 border-b-4">Name</div>
+                    <div class="table-cell pb-2 border-b-4">Type</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Fillable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Nullable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Unique</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Hidden</div>
+                    <div class="table-cell pr-8 pb-2 border-b-4 text-center"></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">id</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">address</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">city</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">state</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">zip</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2">user_id</div>
+                    <div class="table-cell py-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Columns</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"House" Relationships</div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Relationships</div>
+                  <p class="text-grey-dark italic">Determine the relationships for this model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Choose Model:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="">Select Model</option> <option value="5">Car</option><option value="6">House</option><option value="3">User</option></select>
+                      <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                    </div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="content px-0!">
+                <div class="table w-full">
+                  <div class="table-row border-b-2">
+                    <div class="table-cell pl-8 pb-2 border-b-4">Model</div>
+                    <div class="table-cell pb-2 border-b-4">Relationship Type</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Local Key</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Related Key</div>
+                    <div class="table-cell pr-8 pb-2 border-b-4 text-center"></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2">User</div>
+                    <div class="table-cell py-2">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="">Select Relation</option> <option value="1">One to One (hasOne)</option><option value="2">One to Many (hasMany)</option><option value="3">Many to Many (belongsToMany)</option><option value="4">Has Many Through (belongsToMany)</option><option value="5">Polymorphic (morphMany)</option><option value="6">Many to Many Polymorphic (morphedByMany)</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="null">Don't Use</option> <option value="id">id</option><option value="address">address</option><option value="city">city</option><option value="state">state</option><option value="zip">zip</option><option value="user_id">user_id</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center">
+                      <div class="inline-block relative w-full px-1"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="null">Don't Use</option> <option value="id">id</option><option value="address">address</option><option value="city">city</option><option value="state">state</option><option value="zip">zip</option><option value="user_id">user_id</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell pr-8 py-2 text-center"><i class="fa fa-fw fa-trash text-c5"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Relationships</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="model hidden">
+            <div class="card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-file-code-o"></i>
+                <div class="ml-2">"User" Details</div>
+              </div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Special Columns</div>
+                  <p class="text-grey-dark italic">Choose unique column functions</p>
+                </div>
+                <div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Timestamps with Timezone
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Soft Deletes
+                    </label></div>
+                  <div class="field"><label class="checkbox"><input type="checkbox">
+                        Use Remember Token
+                    </label></div>
+                </div>
+              </div>
+              <div class="content flex">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Fillable / Guarded</div>
+                  <p class="text-grey-dark italic">Choose your preferred security style</p>
+                </div>
+                <div>
+                  <div class="text-normal mb-2">Project Type:</div>
+                  <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="1">Fillable</option> <option value="0">Guarded</option></select>
+                    <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Delete</a></div>
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Details</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"User" Columns</div>
+              <div class="content flex border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Columns</div>
+                  <p class="text-grey-dark italic">Determine the columns for your model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Column Name:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><input type="text" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"></div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <div class="content px-0!">
+                <div class="table w-full">
+                  <div class="table-row border-b-2">
+                    <div class="table-cell pl-8 pb-2 border-b-4">Name</div>
+                    <div class="table-cell pb-2 border-b-4">Type</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Fillable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Nullable</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Unique</div>
+                    <div class="table-cell pb-2 border-b-4 text-center">Hidden</div>
+                    <div class="table-cell pr-8 pb-2 border-b-4 text-center"></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">id</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">name</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2 border-b-2">email</div>
+                    <div class="table-cell py-2 border-b-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center border-b-2"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center border-b-2"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell pl-8 py-2">password</div>
+                    <div class="table-cell py-2">
+                      <div class="inline-block relative w-full"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Select Type</option> <option value="4">boolean</option><option value="7">dateTime</option><option value="15">increments</option><option value="16">integer</option><option value="36">string</option><option value="37">text</option><option value="44">unsignedInteger</option><option value="1">bigIncrements</option><option value="2">bigInteger</option><option value="3">binary</option><option value="5">char</option><option value="6">date</option><option value="8">dateTimeTz</option><option value="9">decimal</option><option value="10">double</option><option value="11">enum</option><option value="12">float</option><option value="13">geometry</option><option value="14">geometryCollection</option><option value="17">ipAddress</option><option value="18">json</option><option value="19">jsonb</option><option value="20">lineString</option><option value="21">longText</option><option value="22">macAddress</option><option value="23">mediumIncrements</option><option value="24">mediumInteger</option><option value="25">mediumText</option><option value="26">morphs</option><option value="27">multiLineString</option><option value="28">multiPoint</option><option value="29">multiPolygon</option><option value="30">nullableMorphs</option><option value="31">nullableTimestamps</option><option value="32">point</option><option value="33">polygon</option><option value="34">smallIncrements</option><option value="35">smallInteger</option><option value="38">time</option><option value="39">timeTz</option><option value="40">tinyInteger</option><option value="41">timestamp</option><option value="42">timestampTz</option><option value="43">unsignedBigInteger</option><option value="45">unsignedMediumInteger</option><option value="46">unsignedSmallInteger</option><option value="47">unsignedTinyInteger</option><option value="48">uuid</option></select>
+                        <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                      </div>
+                    </div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell py-2 text-center"><input type="checkbox" name=""></div>
+                    <div class="table-cell pr-8 py-2 text-center"><i class="fa fa-fw fa-trash cursor-pointer text-c5"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Columns</a></div>
+              </div>
+            </div>
+            <div class="card border-c3">
+              <div class="title">"User" Relationships</div>
+              <div class="content flex">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Relationships</div>
+                  <p class="text-grey-dark italic">Determine the relationships for this model</p>
+                </div>
+                <div class="flex-1 flex flex-col">
+                  <div class="text-normal mb-2">Choose Model:</div>
+                  <div class="flex">
+                    <div class="inline-block relative w-1/2"><select name="model" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"><option value="">Select Model</option> <option value="5">Car</option><option value="6">House</option><option value="3">User</option></select>
+                      <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                    </div>
+                    <div class="ml-4"><button class="flex-1 bg-c3 rounded py-2 px-4 text-c1 text-sm">Add</button></div>
+                  </div>
+                </div>
+              </div>
+              <!---->
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-c2">Save Relationships</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="add-ons">
+          <div class="hidden">
+            <div class="laravel-auth card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-cogs"></i>
+                <div class="ml-2">Laravel Front End Presets</div>
+              </div>
+              <div class="content flex flex-wrap border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Description</div>
+                </div>
+                <div class="w-2/3">
+                  <p>Configure your front end setup.</p> <br>
+                  <p>Please see the <a href="https://laravel.com/docs/5.6/frontend" target="_blank" class="no-underline text-c5">Laravel documentation</a> for more information.</p>
+                </div>
+              </div>
+              <div class="content flex flex-wrap">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Configuration</div>
+                </div>
+                <div class="w-2/3">
+                  <div class="inline-block relative w-full"><select name="preset_name" required="required" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow text-sm"><option value="">Please Select...</option> <option value="none">none</option><option value="bootstrap">bootstrap</option><option value="vue">vue</option><option value="react">react</option><option value="zurb-foundation">zurb-foundation</option><option value="bulma">bulma</option><option value="uikit3">uikit3</option><option value="w3css">w3css</option><option value="tachyons">tachyons</option><option value="tailwindcss">tailwindcss</option></select>
+                    <div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-slate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg></div>
+                  </div>
+                  <div class="inline-block mt-6"><label class="checkbox"><input type="checkbox">
+                    Use this preset for Authentication scaffolding
+                </label></div>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Remove</a></div>
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Save</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="laravel-auth card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-user-circle-o"></i>
+                <div class="ml-2">Laravel Authentication</div>
+              </div>
+              <div class="content flex flex-wrap border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Description</div>
+                </div>
+                <div class="w-2/3">
+                  <p>Laravel makes implementing authentication very simple. In fact, almost everything is configured for you out of the box.</p> <br>
+                  <p>Please see the <a href="https://laravel.com/docs/5.6/authentication" target="_blank" class="no-underline text-c5">Laravel documentation</a> for more information.</p>
+                </div>
+              </div>
+              <div class="content flex flex-wrap">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Configuration</div>
+                </div>
+                <div class="w-2/3">
+                  <p>There are no configuration options for this Add-on.</p>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Remove</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="laravel-auth card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-bug"></i>
+                <div class="ml-2">Laravel Debug Bar</div>
+              </div>
+              <div class="content flex flex-wrap border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Description</div>
+                </div>
+                <div class="w-2/3">
+                  <p>Laravel Debug Bar is a package to integrate PHP Debug Bar with Laravel 5.</p> <br>
+                  <p>Please see the <a href="https://github.com/barryvdh/laravel-debugbar" target="_blank" class="no-underline text-c5">Laravel Debugbar documentation</a> for more information.</p>
+                </div>
+              </div>
+              <div class="content flex flex-wrap">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Configuration</div>
+                </div>
+                <div class="w-2/3">
+                  <p>There are no configuration options for this Add-on.</p>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Remove</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="laravel-auth card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-sun-o"></i>
+                <div class="ml-2">Laravel Horizon</div>
+              </div>
+              <div class="content flex flex-wrap border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Description</div>
+                </div>
+                <div class="w-2/3">
+                  <p>Horizon provides a beautiful dashboard and code-driven configuration for your Laravel powered Redis queues. Horizon allows you to easily monitor key metrics of your queue system such as job throughput, runtime, and job failures.</p>
+                  <br>
+                  <p>Please see the <a href="https://laravel.com/docs/5.6/horizon" target="_blank" class="no-underline text-c5">Laravel documentation</a> for more information.</p>
+                </div>
+              </div>
+              <div class="content flex flex-wrap">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Configuration</div>
+                </div>
+                <div class="w-2/3">
+                  <p>There are no configuration options for this Add-on.</p>
+                </div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Remove</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden">
+            <div class="laravel-passport card border-c3">
+              <div class="title flex"><i class="fa fa-fw fa-id-card-o"></i>
+                <div class="ml-2">Laravel Passport</div>
+              </div>
+              <div class="content flex flex-wrap border-b">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Description</div>
+                </div>
+                <div class="w-2/3">
+                  <p>Laravel makes API authentication a breeze using Laravel Passport, which provides a full OAuth2 server implementation for your Laravel application in a matter of minutes.</p> <br>
+                  <p>Please see the <a href="https://laravel.com/docs/5.6/passport" target="_blank" class="no-underline text-c5">Laravel documentation</a> for more information.</p>
+                </div>
+              </div>
+              <div class="content flex flex-wrap">
+                <div class="w-1/3">
+                  <div class="font-medium text-lg mb-1">Configuration</div>
+                </div>
+                <div class="w-2/3"><label class="checkbox"><input type="checkbox">
+                Publish Passport Vue Components
+            </label></div>
+              </div>
+              <div class="footer justify-end">
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Remove</a></div>
+                <div class="w-1/4 border-l-2"><a class="cursor-pointer text-black">Save</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <div class="card">
+        <div class="title">Build Project</div>
+        <div class="content">
+          <div class="flex flex-wrap">
+            <div class="flex-1 text-center cursor-pointer mr-2">
+              <div class="border py-2 shadow rounded flex items-center justify-center"><i class="fa text-4xl fa-git"></i>
+                <div class="text-normal italic ml-4">Git Repository</div>
+              </div>
+            </div>
+            <div class="flex-1 text-center cursor-pointer ml-2">
+              <div class="border py-2 shadow rounded flex items-center justify-center"><i class="fa text-4xl fa-archive"></i>
+                <div class="text-normal italic ml-4">Zip Archive</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <!---->
+            <!---->
+          </div>
+        </div>
+        <div class="content border-t py-2">
+          <p class="text-sm text-grey italic">Please Note: Your project will be locked to prevent changes during build. Once the build has completed your project will be unlocked.</p>
+        </div>
+        <div class="footer p-4 flex justify-end"><button disabled="disabled" class="disabled opacity-50 cursor-not-allowed bg-c5 rounded py-2 px-4 text-c1 text-sm">Build Project</button> <button class="bg-c3 rounded py-2 px-4 text-c1 text-sm ml-4">Cancel</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
